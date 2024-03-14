@@ -1,16 +1,42 @@
-body *{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a border for all elements within the body */
+body * {
     border: 2px solid #000;
     height: 90px;
     margin: 5px;
     text-align: center;
-    font-size: 2rem; 
+    font-size: 2rem;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-nav{
+nav {
     height: 90px;
 }
 
+main {
+    width: 100%;
+    height: 50vh;
+    border: none;
+}
 
-#main{
-    padding: 8rem;
+/* Separate Content 1 and Content 2 */
+aside {
+    width: 49%;
+    height: 49vh;
+    float: left;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+section {
+    width: 49%;
+    height: 49vh;
+    float: left;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+footer{
+    height: 90px;
 }
